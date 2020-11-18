@@ -1,0 +1,200 @@
+body{
+    font-family: Poppins, Helvetica, Arial, sans-serif;
+    font-style: normal;
+}
+
+.container{
+    text-align: center;
+}
+
+.inner-content{
+    width: 67%;
+    padding-bottom: 50px;
+    margin: 0 auto;
+}
+
+.inner-content h3{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    color: #403023;
+}
+
+.inner-content h4{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #535353;
+}
+
+.inner-content .divider {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    min-height: 20px;
+    position: relative;
+    width: 15%;
+}
+
+.inner-content .divider i{
+    transform: rotate(90deg);
+    color: #e2e2e2;
+}
+
+.inner-content .divider::before {
+    border-top: 1px solid #e2e2e2;
+    content: "";
+    height: 0;
+    position: absolute;
+    top: 13px;
+    left: 0;
+    right: 50%;
+    margin-right: 25px;
+}
+
+.inner-content .divider::after {
+    border-top: 1px solid #e2e2e2;
+    content: "";
+    height: 0;
+    position: absolute;
+    top: 13px;    
+    right: 0;
+    left: 50%;
+    margin-left: 25px;
+}
+
+.album-slide .slick-wrapper {
+    margin: 0 auto;
+    width: 840px;
+}
+
+.album-slide .slide-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.album-slide .slick-arrow{
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 0;
+    border: 0;
+    padding: 0;
+    top: 50%;
+    cursor: pointer;
+    color: #000;
+}
+
+.album-slide .slidersel-control-prev{
+    left: -30px;
+}
+
+.album-slide .slidersel-control-next{
+    right: -30px;
+}
+
+.album-slide .slick-arrow .fas{
+    font-size: x-large;
+}
+
+.album-slide .album-slide-item .grid-photo-gallery{
+    position: relative;
+    height: 400px;
+}
+
+.album-slide .album-slide-item .grid-photo-gallery-grid-1 .grid-photo-gallery-item-w2{
+    width: 66.6666% !important;
+}
+
+.album-slide .album-slide-item .grid-photo-gallery-grid-2 .grid-photo-gallery-item-w2{
+    width: 100% !important;
+}
+
+.album-slide .album-slide-item .grid-photo-gallery-grid-1 .grid-photo-gallery-item{
+    width: 33.3333%;
+    float: left;
+    padding: 0;
+    overflow: hidden;
+}
+
+.album-slide .album-slide-item .grid-photo-gallery-grid-2 .grid-photo-gallery-item{
+    width: 50%;
+    float: left;
+    padding: 0;
+    overflow: hidden;
+}
+
+.grid-photo-gallery .grid-photo-gallery-item-w1 .grid-photo-gallery-item-h1, .grid-photo-gallery .grid-photo-gallery-item-w2 .grid-photo-gallery-item-h2 {
+    padding-bottom: 75%;
+}
+
+.grid-photo-gallery-grid-2 .grid-photo-gallery-item-w1 .grid-photo-gallery-item-h1{
+    padding-bottom: 50%;
+}
+
+.grid-photo-gallery-grid-2 .grid-photo-gallery-item-w2 .grid-photo-gallery-item-h2{
+    padding-bottom: 25%;
+}
+
+.grid-photo-gallery-item .grid-photo-gallery-item-link {
+    width: 100%;
+    height: 0;
+    display: block;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.grid-photo-gallery .grid-photo-gallery-img-wrapper{
+    top: 15px;
+    right: 15px;
+    left: 15px;
+    bottom: 15px;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    display: block;
+    position: absolute;
+    overflow: hidden;
+}
+
+.grid-photo-gallery .grid-photo-gallery-image{
+    -webkit-transition: -webkit-transform 0.7s linear;
+    transition: -webkit-transform 0.7s linear;
+    transition: transform 0.7s linear;
+    transition: transform 0.7s linear, -webkit-transform 0.7s linear;
+    transform: scale(1);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.grid-photo-gallery .grid-photo-gallery-item:hover .grid-photo-gallery-image{
+    transform: scale(1.1);
+}
+
+.grid-photo-gallery .grid-photo-gallery-item .grid-photo-gallery-icon{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    border-color: #fff;
+    color: #fff;
+}
+
+.grid-photo-gallery .grid-photo-gallery-item:hover .grid-photo-gallery-icon{
+    display: block;
+    opacity: 1;
+    margin-top: 0;
+}
+
+.grid-photo-gallery .grid-photo-gallery-item .fas{
+    font-size: 50px;
+}
